@@ -63,8 +63,10 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #0066cc 0%, #ff3333 100%);
-            color: white;
+            background: #fff;
+            background-image: radial-gradient(circle at 25% 25%, #f0f0f0 2px, transparent 2px), radial-gradient(circle at 75% 75%, #f0f0f0 2px, transparent 2px);
+            background-size: 20px 20px;
+            color: #333;
             padding: 8rem 2rem;
             text-align: center;
         }
@@ -72,7 +74,7 @@
         .hero h2 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #003d99;
         }
 
         .hero p {
@@ -82,8 +84,8 @@
 
         .cta-button {
             display: inline-block;
-            background-color: white;
-            color: #0066cc;
+            background-color: #0066cc;
+            color: white;
             padding: 0.8rem 2rem;
             border-radius: 5px;
             text-decoration: none;
@@ -92,7 +94,7 @@
         }
 
         .cta-button:hover {
-            background-color: #ecf0f1;
+            background-color: #004499;
         }
 
         section {
@@ -215,6 +217,15 @@
                 <h3>Big Data & Cloud</h3>
                 <p>Working with Apache Spark and cloud platforms like AWS and Azure</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <div class="about-content">
+            <p>Get in touch with me!</p>
+            <p>Email: <a href="mailto:matiashundewadt@gmail.com">matiashundewadt@gmail.com</a></p>
         </div>
     </section>
 
