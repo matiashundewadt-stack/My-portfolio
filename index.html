@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #003d99;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff3333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0066cc 0%, #ff3333 100%);
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #0066cc;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ecf0f1;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: #003d99;
+        }
+
+        .about-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-card h3 {
+            color: #ff3333;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #003d99;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Matias Hundewadt</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I'm a passionate data scientist dedicated to turning data into insights</p>
+        <a href="#about" class="cta-button">Learn More</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Hello! I'm a data scientist with a strong background in machine learning and statistical analysis.
+                I love solving complex problems using data-driven approaches and building predictive models that
+                make a real-world impact. With expertise in Python, data visualization, and cloud platforms,
+                I transform raw data into actionable insights that drive business decisions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2>Data Science Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Python & Data Analysis</h3>
+                <p>Proficient in pandas, NumPy, and scikit-learn for data manipulation and statistical analysis</p>
+            </div>
+            <div class="skill-card">
+                <h3>Machine Learning</h3>
+                <p>Experience with classification, regression, clustering, and deep learning algorithms</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Visualization</h3>
+                <p>Creating compelling visualizations with Matplotlib, Seaborn, and Plotly</p>
+            </div>
+            <div class="skill-card">
+                <h3>SQL & Databases</h3>
+                <p>Advanced SQL queries and experience with PostgreSQL and MongoDB databases</p>
+            </div>
+            <div class="skill-card">
+                <h3>Statistical Analysis</h3>
+                <p>Hypothesis testing, A/B testing, and statistical modeling expertise</p>
+            </div>
+            <div class="skill-card">
+                <h3>Big Data & Cloud</h3>
+                <p>Working with Apache Spark and cloud platforms like AWS and Azure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Matias Hundewadt. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
